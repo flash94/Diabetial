@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecommendedFood"
+    android:orientation="vertical"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:id="@+id/ll">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Best and Worst Foods for Diabetes"
+                android:layout_margin="5dp"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/Health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Your food choices matter a lot when you've got diabetes.Some are better than others. Nothing is completely off-limits. Even items that you might think of as the worst could be occasional treats -- in tiny amounts. But they won’t help you nutrition-wise, and it’s easiest to manage your diabetes if you mainly stick to the “best” options."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1. Starches"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Your body needs carbs. But you want to choose wisely. Use this list as a guide.\n\n
+
+BEST CHOICES\n\n
+
+    1. Whole grains, such as brown rice, oatmeal, quinoa, millet, or amaranth\n\n
+    2. Baked sweet potato\n\n
+    3. Items made with whole grains and no (or very little) added sugar\n\n
+
+WORST CHOICES \n\n
+
+    1. Processed grains, such as white rice or white flour
+    Cereals with little whole grains and lots of sugar\n\n
+    White bread, French fries, Fried white-flour tortilla.\n\n\n"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#38b6ff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2. VEGETABLES"
+        android:textColor="#FF4081"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Load up! You’ll get fiber and very little fat or salt (unless you add them).  Remember, potatoes and corn count as carbs.\n\n
+
+BEST CHOICES  \n\n1. Fresh veggies, eaten raw or lightly steamed, roasted, or grilled\n\n
+2. Plain frozen vegetables, lightly steamed\n\n
+3. Greens such as kale, spinach, and arugula. Iceberg lettuce is not as great because it’s low in nutrients.\n\n
+4. Low sodium or unsalted canned vegetables \n\n
+
+ Go for a variety of colors: dark greens, red or orange (think of carrots or red peppers), whites (onions) and even purple (eggplants). The 2015 U.S. guidelines recommend 2.5 cups of veggies per day.\n\n
+
+WORST CHOICES \n\n
+
+    1. Canned vegetables with lots of added sodium\n\n
+2. Veggies cooked with lots of added butter, cheese, or sauce\n\n
+3. Pickles, if you need to limit sodium. Otherwise, pickles are OK.\n\n
+4.  Sauerkraut, for the same reason as pickles. Limit them if you have high blood pressure.\n\n\n
+"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3. FRUITS"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="They give you carbohydrates, vitamins, minerals, and fiber. Most are naturally low in fat and sodium. But they tend to have more carbs than vegetables do.\n\n
+
+BEST CHOICES  \n\n
+
+1. Fresh fruit\n\n
+2. Plain frozen fruit or fruit canned without added sugar\n\n
+3.  Sugar-free or low-sugar jam or preserves\n\n
+4. No-sugar-added applesauce\n\n
+
+WORST CHOICES \n\n
+
+ 1. Canned fruit with heavy sugar syrup\n\n
+2.  Chewy fruit rolls\n\n
+3. Regular jam, jelly, and preserves (unless you have a very small portion)\n\n
+4. Sweetened applesauce\n\n
+Fruit punch, fruit drinks, fruit juice drinks\n\n\n"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4. PROTEIN"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="You have lots of choices, including beef, chicken, fish, pork, turkey, seafood, beans, cheese, eggs, nuts, and tofu.\n\n
+
+BEST CHOICES  \n\n
+
+The American Diabetes Association lists these as the top options:\n\n
+
+1. Plant-based proteins such as beans, nuts, seeds, or tofu\n\n
+2. Fish and seafood\n\n
+3. Chicken and other poultry (Choose the breast meat if possible.)\n\n
+4. Eggs and low-fat dairy\n\n
+
+    If you eat meat, keep it low in fat. Trim the skin off of poultry.\n\n
+
+    Try to include some plant-based protein from beans, nuts, or tofu, even if you're not a vegetarian or vegan. You’ll get nutrients and fiber that aren’t in animal products.\n\n
+
+WORST CHOICES \n\n
+
+1. Fried meats\n\n
+2. Higher-fat cuts of meat, such as ribs\n\n
+3. Pork bacon\n\n
+4. Regular cheeses\n\n
+5. Poultry with skin\n\n
+6. Deep-fried fish\n\n
+7. Deep-fried tofu\n\n
+8. Beans prepared with lard\n\n\n
+"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5. DRINKS"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="When you down a favorite drink, you may get more calories, sugar, salt, or fat than you bargained for. Read the labels so you know what’s in a serving.\n\n
+
+BEST CHOICES  \n\n
+
+1.  Unflavored water or flavored sparkling water\n\n
+2.  Unsweetened tea with or without a slice of lemon\n\n
+3.  Light beer, small amounts of wine, or non-fruity mixed drinks\n\n
+4.  Coffee, black or with added low-fat milk and sugar substitute\n\n
+
+WORST CHOICES \n\n
+
+1.  Regular sodas\n\n
+2.  Regular beer, fruity mixed drinks, dessert wines\n\n
+3.  Sweetened tea\n\n
+4.  Coffee with sugar and cream\n\n
+5.  Flavored coffees and chocolate drinks\n\n
+6.  Energy drinks\n\n\n"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hayroyal.tom.diabetial">
+
+    <!-- Created by Folalu Tomiwa 21/03/2019 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginForAdminAndUser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TipsforDiabetics" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RegisterActivityUser"
+            android:label="@string/title_activity_register" />
+        <activity android:name=".UserAndAdminRegister" />
+        <activity android:name=".LoginActivityUser" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".ExerciseTips" />
+        <activity android:name=".RecommendedFood" />
+        <activity android:name=".RegisterActivityAdmin" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".ReminderAddActivity" />
+        <activity
+            android:name=".ReminderEditActivity"
+            android:label="@string/title_activity_edit_reminder" />
+        <activity
+            android:name=".TestResultEditActivity"
+            android:label="Edit Test Result" />
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".TestResultAddActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".BmiCalculator"></activity>
+    </application>
+
+</manifest>

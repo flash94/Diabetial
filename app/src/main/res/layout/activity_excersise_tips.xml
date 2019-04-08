@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseTips"
+    android:orientation="vertical"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:id="@+id/ll">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Quick Tips for Working Out"
+                android:layout_margin="5dp"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/Health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Anything that gets your heart pumping and makes you break a sweat will do. You don’t need a health club membership or personal trainer. And here’s a little secret: You don’t have to do 30 minutes all at once. Ten minutes in the morning, 10 minutes in the afternoon, and 10 minutes after dinner is just fine."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Work Out Tips for You"
+                android:textColor="#FF4081"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1. Walk the dog. If you don’t have a pet, walk with a   friend or neighbor. \n\n
+    2. Rake leaves, mow the lawn, or dig in the dirt to clean up your garden.\n\n
+    3. Play tag with your children or grandchildren.\n\n
+    4. Ballroom dance. You can also take dance lessons -- modern, ballet, or hip-hop.\n\n
+    5. Roller skate. It burns about 225 calories per hour and uses muscles that may be rusty.\n\n
+    6. Play tennis or any team sport. You’ll make some new friends and stay active.\n\n
+    7. Swim. It's a great total body workout and helps you relax. It’s also a low-impact workout that is easy on your joints.\n\n
+    8. Take an evening after-dinner walk. Walking at the end of day can help you unwind and feel less stressed after a busy day. \n\n
+    9. Wash your car or clean the house. Even if you get your closets in order instead of doing a deep cleaning, you’re still moving.\n\n"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#38b6ff" />
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold|italic"
+                android:text="10. When doing work around the house, pump up some fun music and make all your movements bigger. Squat while you work: Bend from the hips and knees like you're sitting down in a chair. Make sure your knees don't go farther forward than your toes.\n\n
+    Take the stairs instead of the elevator. If you’re going to a high floor, get off a couple of floors below and climb the rest of the way.\n\n
+    Don't call or email your colleagues at work. Walk over to a co-worker’s desk for a face-to-face.\n\n
+    Walk or pace when you're on the phone, at home, or at work.\n\n
+    Park your car at the far end of the parking lot. And bring your bags out to the car after every purchase.\n\n"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
