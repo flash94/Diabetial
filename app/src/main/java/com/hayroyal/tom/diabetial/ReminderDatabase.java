@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ReminderDatabase extends SQLiteOpenHelper {
     // Database Version
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 5;
 
     // Database Name
     private static final String DATABASE_NAME = "ReminderDatabase";
@@ -66,7 +66,7 @@ public class ReminderDatabase extends SQLiteOpenHelper {
                 + D_TITLE + " TEXT NOT NULL,"
                 + D_DATE + " TEXT NOT NULL,"
                 + D_TIME + " INTEGER NOT NULL,"
-                + D_Bloodpressure + "TEXT NOT NULL,"
+                + D_Bloodpressure + " TEXT NOT NULL,"
                 + D_Bloodsugar + " TEXT NOT NULL,"
                 + D_Cholesterol + " TEXT NOT NULL,"
                 + D_Bodyweight + " TEXT NOT NULL,"
