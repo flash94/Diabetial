@@ -270,7 +270,15 @@ public class ReminderEditActivity extends AppCompatActivity implements
         mCalendar.set(Calendar.SECOND, 0);
 
         // Cancel existing notification of the reminder by using its ID
-        mAlarmReceiver.cancelAlarm(getApplicationContext(), mReceivedID);
+        (new AlarmReceiver()).cancelAlarm(getApplicationContext(), mReceivedID);
+        // Create a new notification
+        if (mActive.equals("true")) {
+            if (mRepeat.equals("true")) {
+                new AlarmReceiver().setRepeatAlarm(getApplicationContext(), mCalendar, mReceivedID, mRepeatTime);
+            } else if (mRepeat.equals("false")) {
+                new AlarmReceiver().setAlarm(getApplicationContext(), mCalendar, mReceivedID);
+            }
+        }
 
         // Create toast to confirm update
         Toast.makeText(getApplicationContext(), "Edited",

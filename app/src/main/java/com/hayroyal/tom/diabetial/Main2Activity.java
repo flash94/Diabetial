@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -280,7 +282,8 @@ public class Main2Activity extends AppCompatActivity {
             itemHolder.setBp(item.mBloodpressure);
 //            itemHolder.setChole(item.mCholesterol);
 //            itemHolder.setBlo(item.mBloodsugar);
-            itemHolder.setActiveImage(item.mActive);
+            Log.println(Log.ASSERT, "LOH", (!TextUtils.isEmpty(item.mActive) && item.mActive.equals("true")) + "");
+            itemHolder.setActiveImage((!TextUtils.isEmpty(item.mActive) && item.mActive.equals("true")) + "");
         }
 
         @Override
@@ -320,7 +323,8 @@ public class Main2Activity extends AppCompatActivity {
                 try {
                     return f.parse(o1).compareTo(f.parse(o2));
                 } catch (ParseException e) {
-                    throw new IllegalArgumentException(e);
+                    e.printStackTrace();
+                    return 0;
                 }
             }
         }

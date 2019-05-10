@@ -8,7 +8,7 @@ import android.view.View;
 
 //created by Folalu Tomiwa 20/03/2019
 public class HomePage extends AppCompatActivity {
-private Toolbar mToolbar;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,32 +35,32 @@ private Toolbar mToolbar;
     public void healthClicked(View view){
         Intent health = new Intent (this, Main2Activity.class);
         startActivity(health);
-        finish();
+//        finish();
     }
 
     public void reminderClicked(View view){
         Intent reminder = new Intent (this, MainActivity.class);
         startActivity(reminder);
-        finish();
+//        finish();
     }
     public void exerciseClicked (View view){
         Intent exercise = new Intent (this, ExerciseTips.class);
         startActivity(exercise);
-        finish();
+//        finish();
     }
     public void dietClicked (View view){
         Intent diet = new Intent (this, RecommendedFood.class);
         startActivity(diet);
-        finish();
+//        finish();
     }
     public void stayClicked (View view){
         Intent stay = new Intent (this, TipsforDiabetics.class);
         startActivity(stay);
-        finish();
+//        finish();
     }
     public void bmiClicked (View view) {
         Intent bmi = new Intent(this, BmiCalculator.class);
         startActivity(bmi);
-        finish();
+//        finish();
     }
 }
